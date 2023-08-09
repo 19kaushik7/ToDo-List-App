@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9,
+     #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, 
+     #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+     padding: 10px;
+}
+.todo-container {
+    width: 100%;
+    max-width: 540px;
+    margin: 100px auto 10px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    background-color: #aa8fd8;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.todo-container h2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #595353;
+}
+.todo-container h2 img {
+    width: 30px;
+    margin-left: 10px;
+}
+.from-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.from-box input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+.from-box button {
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background-color: #AC2F76;
+    border-radius: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #fff;
+    box-shadow: inset 3px 0 8px rgba(0, 0, 0, 0.24);
+}
+.from-box button:active {
+    color: #aa8fd8;
+}
+
+#listContainer li {
+    list-style-type: none;
+    font-size: 17px;
+    padding: 12px 12px 12px 34px;
+    user-select: none;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-top: 4px;
+    position: relative;
+    color: #595353;
+    font-weight: bold;
+}
+#listContainer li::before {
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-image: url(circle.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 5px;
+}
+#listContainer li.checked {
+    background-color: #917699;
+    color: #6a6271;
+    text-decoration: line-through;
+}
+#listContainer li.checked::before {
+    background-image: url(check.png);
+}
+#listContainer li span {
+	position: absolute;
+	right: 2px;
+	top: 21px;
+	width: 22px;
+	height: 22px;
+	font-size: 22px;
+	color: #AC2F76;
+	line-height: 23px;
+	text-align: center;
+	border-radius: 50%;
+}
+#listContainer li span:hover {
+    background-color: #9ba5b9;
+}
