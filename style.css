@@ -139,3 +139,11 @@
         padding: 16px 24px;
     }
   }
+ @media only screen and (max-width: 296px) {
+    .from-box {
+        padding-left: 0;
+    }
+    .from-box button {
+        padding: 16px 18px;
+    }
+  }
