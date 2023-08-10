@@ -113,8 +113,20 @@
 
 
 /* RESPONSIVE */
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 369px) {
+    .from-box {
+        padding-left: 7px;
+    }
     .from-box button {
-        padding: 16px 38px;
+        padding: 16px 40px;
+    }
+  }
+
+  @media only screen and (max-width: 340px) {
+    .from-box {
+        padding-left: 0;
+    }
+    .from-box button {
+        padding: 16px 35px;
     }
   }
